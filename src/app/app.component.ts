@@ -8,7 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   funcionarios = [];
 
-  aoAdicionar(funcinario){
+  nome = 'Gabriel';
+  dataAniversario = new Date(1994, 11, 25);
+  preco = 12855.32;
+  troco = 0.57392;
+
+  aoAdicionar(funcinario) {
     this.funcionarios.push(funcinario);
   }
 

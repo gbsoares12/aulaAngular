@@ -4,7 +4,7 @@
 
 <div class="form-group">
   <label>Nome</label>
-  <input type="text" class="form-control" [(ngModel)]="nome" (focus)="adicionado = false">
+  <input type="text" class="form-control" [(ngModel)]="nome" appCampoColorido cor ="yellow" (focus)="adicionado = false" #campo="campoColorido">
 </div>
 
 <div class="row">
@@ -14,4 +14,6 @@
   <div class="col-2">
     <button type="button" class="btn btn-primary" (click)="remover()">Remover</button>
   </div>
+    <button type="button" class="btn btn-info" (click)="campo.colorir()">Colorir</button>
+    <button type="button" class="btn btn-info" (click)="campo.descolorir()">Descolorir</button>
 </div>

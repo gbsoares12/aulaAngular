@@ -1,9 +1,22 @@
 <div class="container">
+  <h1>{{ nome | uppercase }}</h1>
+  <h1>{{ dataAniversario | date: 'dd/MM/y'}}</h1>
+  <h1>{{ preco | number}} </h1>
+  <h1>{{ troco | currency: 'BRL':true:'1.2-2' }}</h1>
+</div>
+
+
+
+
+
+
+
+  <!--
     <app-funcionario-form (funcionarioAdicionado)="aoAdicionar($event)" (removerFuncionario)="aoRemover()"></app-funcionario-form>
     <div class="row" style="margin-top: 25px;">
 
         <div class="col-2" *ngFor="let f of funcionarios">
             <app-funcionario-card [funcionario]="f"></app-funcionario-card>
         </div>
-    </div>
-</div>
+    </div>-->
+

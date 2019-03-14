@@ -7,7 +7,7 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 })
 export class FuncionarioFormComponent {
   ultimoId = 0;
-  nome = 'Gabriel';
+  nome = '';
   idade = 24;
   adicionado = false;
 
@@ -34,5 +34,5 @@ export class FuncionarioFormComponent {
   remover(){
     this.removerFuncionario.emit();
   }
-  
+
 }

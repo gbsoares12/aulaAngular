@@ -3,7 +3,7 @@ import { Component, OnInit, Input } from '@angular/core';
 @Component({
   selector: 'app-funcionario-card',
   templateUrl: './funcionario-card.component.html',
-  //styleUrls: ['./funcionario-card.component.css']
+  // styleUrls: ['./funcionario-card.component.css']
   styles: [`
     .card-block {
       text-transform: uppercase;
@@ -11,23 +11,22 @@ import { Component, OnInit, Input } from '@angular/core';
     }
   `]
 })
-export class FuncionarioCardComponent{
+export class FuncionarioCardComponent {
 
   @Input() funcionario: any;
 
-  getEstilosCartao(){
+  getEstilosCartao() {
     return {
       borderWidth: '5px',
-      backgroundColor: this.funcionario.id%2 === 0 ? 'lightblue' : 'lightgrey'
+      backgroundColor: this.funcionario.id % 2 === 0 ? 'lightblue' : 'lightgrey'
     };
   }
 
-  getClassesCss(){
-    return ['badge','badge-primary'];
+  getClassesCss() {
+    return ['badge', 'badge-primary'];
   }
 
-    
-  isAdmin(){
-    return this.funcionario.nome.startsWith('T');//Serve para pegar a primeira letra da string
+  isAdmin() {
+    return this.funcionario.nome.startsWith('T'); // Serve para pegar a primeira letra da string
   }
 }
